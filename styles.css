@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    background: linear-gradient(180deg, rgba(253, 162, 180, 0.8) 0%, rgba(253, 162, 180, 0.8) 80%, rgba(253, 162, 180, 0.4) 100%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 30%; /* Ajusta la altura según tus necesidades */
+    position: relative; /* Necesario para la posición absoluta de imgFondo */
+}
+
+.logo {
+    margin-right: 20px; /* Espacio entre el logo y la barra de búsqueda */
+}
+
+.logo img {
+    width: 220px; /* Ajusta el tamaño del logo */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Alinea el contenido de la barra de búsqueda al centro */
+    flex-grow: 1; /* Permite que este contenedor ocupe el espacio restante */
+    position: absolute; /* Posiciona en relación al header */
+    left: 50%; /* Alinea al centro del header */
+    transform: translateX(-50%); /* Centra el contenedor de búsqueda */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 450px; /* Ajusta el ancho de la barra de búsqueda */
+    text-align: center; /* Centra el texto dentro del input */
+    font-weight: bold; /* Aplica negrita al texto */
+    font-size: 18px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -50px; /* Ajusta este margen si es necesario */
+}
+
+.imgFondo {
+    position: absolute; /* Coloca la imagen como fondo */
+    right: 0; /* Alinea a la derecha */
+    top: 0; /* Alinea al top */
+    height: 120px; /* Tamaño de la imagen de fondo */
+    margin: 0; /* Sin margen */
+}
+
+.imgFondo img {
+    height: 120px; /* Tamaño de la imagen de fondo */
+    display: block; /* Evita el espacio extra debajo de la imagen */
+}
+
+
+.navbar {
+    background-color: #70B648;
+    padding: 21px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center;
+
+}
+
+.redes {
+    display: flex; /* Usa flexbox para alinear los iconos */
+    gap: 0px; /* Espacio entre iconos */
+    position: absolute; /* Coloca la sección de redes en la parte superior */
+    left: 20px; /* Ajusta el espacio a la izquierda */
+}
+
+.redes img {
+    width: 45px; /* Tamaño de los iconos */
+
+}
+.redes a:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% (puedes ajustar este valor) */
+    transition: transform 0.3s; /* Suaviza la transición del tamaño */
+}
+.nav-menu {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    flex-grow: 1; /* Permite que este contenedor ocupe el espacio restante */
+    gap: 10px;
+}
+
+.nav-menu a {
+    margin: 0 15px; /* Espacio entre los enlaces centrados */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s; /* Suaviza la transición del color */
+}
+.nav-menu a:hover {
+    color: #FFDEAE; /* Color dorado al pasar el cursor (puedes cambiarlo) */
+}
+main {
+    padding: 20px;
+    background-color: rgba(2, 178, 189, 0.36);
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 40px;
+    color: #5a3822;
+    font-weight: bold;
+}
+
+.banner img {
+    width: 70%;
+    margin: 20px 0;
+}
+
+.banner p {
+    font-size: 16px;
+    color: #5a3822;
+}
+
+.telefono {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c55d00;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+footer img {
+    width: 75px;
+}
+
+footer a:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% (puedes ajustar este valor) */
+    transition: transform 0.3s; /* Suaviza la transición del tamaño */
+}
